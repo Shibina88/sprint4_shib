@@ -33,7 +33,7 @@ public class MainPage {
         ((JavascriptExecutor)webDriver).executeScript("arguments[0].scrollIntoView();",clickFooterCreateOrderBtn);
         clickFooterCreateOrderBtn.click();
     }
-    public void cookieCloseWind(){
+    public void cookieCloseWind(){ //метод на закрытие куки
         WebElement cookieCloseButton = webDriver
                 .findElement(cookiesBtnLoc); // *** нашли кнопку Статус заказа//выбор локатора, в первую очередь id, by name, link  текст,
         cookieCloseButton.click();
